@@ -81,7 +81,7 @@ app.delete('/deletebookmark/:id',(req,res)=>{
     })
 })
 
-app.listen(8000,()=>{
-  console.log("server is listening on port 8000");  
+app.listen(process.env.PORT || 8000,()=>{
+  console.log(`server is running ${process.env.PORT || 8000}`);  
 })
 
