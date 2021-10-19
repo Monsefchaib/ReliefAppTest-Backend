@@ -9,8 +9,6 @@ mongoose.connect(connectionUrl, {useNewUrlParser: true}).then(()=>{
     console.log(e);
 });
 
-// mongoose.set('useCreateIndex',true);
-// mongoose.set('useFindAndModify',false);
 
 module.exports = {
     mongoose
@@ -18,4 +16,3 @@ module.exports = {
 
 
 
-// 'mongodb://rootuser:rootpass@localhost:27017/Youtube?authSource=admin'
